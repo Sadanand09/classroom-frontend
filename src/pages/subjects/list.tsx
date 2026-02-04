@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { DEPARMENT_OPTIONS } from "@/constants";
+
 import { Subject } from "@/types";
 import { useTable } from "@refinedev/react-table";
 import { ColumnDef } from "@tanstack/react-table";
@@ -125,12 +125,7 @@ const SubjectsList = () => {
               </SelectTrigger>
 
               <SelectContent>
-                <SelectItem value="all">All Departments</SelectItem>
-                {DEPARMENT_OPTIONS.map((department) => (
-                  <SelectItem key={department.value} value={department.value}>
-                    {department.label}
-                  </SelectItem>
-                ))}
+                <div>All Departments</div>
               </SelectContent>
             </Select>
             <CreateButton />
