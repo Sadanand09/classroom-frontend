@@ -56,7 +56,7 @@ function UploadWidget({
             setDeleteToken(result.info.delete_token ?? null);
             onChangeRef.current?.(payload);
           }
-        },
+        }
       );
 
       return true;
@@ -94,7 +94,7 @@ function UploadWidget({
           {
             method: "POST",
             body: params,
-          },
+          }
         );
       }
     } catch (error) {
